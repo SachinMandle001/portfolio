@@ -1,0 +1,37 @@
+.login-wrapper {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  /* background-color: #f5f5f5; */
+background: url('/creambg.png') no-repeat center;
+background-size: cover;
+
+}
+
+.login-card {
+  border-radius: 20px;
+  background-color: white;
+   font-family: "Poppins", sans-serif;
+}
+
+.login-card:hover{
+    background-color: white !important;
+  transform:none;
+  color: black !important;
+}
+.login-card:hover .ctitle {
+  color: black !important;
+}
+
+.btn-primary {
+  background-color: #FF6000 !important;
+  border: none !important;
+   font-family: "Lora", serif;
+}
+
+.form-control:focus,
+.input-group .form-control:focus {
+  border-color: inherit !important;
+  box-shadow: none !important;
+  outline: none !important;
+}

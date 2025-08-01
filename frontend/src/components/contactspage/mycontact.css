@@ -1,0 +1,54 @@
+
+.highlight {
+  color: #FF6000;
+  font-weight: bold;
+}
+
+.icon {
+  color: #FF6000;
+}
+
+.contact-form {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.send-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border: none !important;
+  border-radius: 999px;
+  background-color: #FF6000 !important;
+  color: white;
+}
+
+.formbg{
+ background-color: #eae9e9;
+}
+
+.social-icons {
+  background-color: #444; 
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 25px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-icons:hover {
+  background-color: #f97316; 
+  transform: scale(1.1);
+  color: white;
+}
+
+.cimg:hover {
+  transform: none;
+  box-shadow:none;
+}

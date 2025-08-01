@@ -1,0 +1,40 @@
+.custom-accordion .accordion-item {
+  background-color: #e9ecef; 
+  border: none;
+  margin-bottom: 8px;
+}
+
+.custom-accordion .accordion-button {
+  background-color: #e9ecef;
+  color: #333;
+  font-weight: 500;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: #d6d8db; 
+  color: #000;
+  box-shadow: none;
+}
+
+.custom-accordion .accordion-body {
+  background-color: #f1f1f1;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size:90%;
+  
+}
+.custom-accordion .accordion-button:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+  outline: none !important;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  border: none;
+}
+
+.custom-accordion .accordion-item {
+  border: none;
+}
+

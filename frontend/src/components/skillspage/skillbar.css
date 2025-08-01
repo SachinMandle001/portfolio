@@ -1,0 +1,20 @@
+h5{
+   font-family: "Lora", serif;
+   font-weight:bold;
+   color: #FF6000 !important;
+
+}
+
+.ogborder{
+border: 3px solid #3C3F3C;
+transition: background-color 0.3s, transform 0.2s;
+}
+
+.ogborder:hover{
+    border: 3px solid #FF6000 ;
+    transform: scale(1.01);
+}
+
+/* .gpb .progress-bar {
+  background-color: #FF6000 !important;
+} */

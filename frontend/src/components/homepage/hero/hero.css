@@ -1,0 +1,51 @@
+/* Orange Text Utility */
+.orngetext {
+  color: #FF6000;
+}
+
+/* Headings */
+h1,.myft{
+  font-family: "Lora", serif;
+}
+
+/* Paragraphs */
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+}
+
+/* Button Styling */
+.orngebtn {
+  background-color: #FF6000;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.2s ease-in-out;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.orngebtn:hover {
+  transform: scale(1.07);
+}
+
+/* Hero Section Background Grid */
+.mybody {
+  background-image:
+    linear-gradient(#eee 1px, transparent 1px),
+    linear-gradient(90deg, #eee 1px, transparent 1px);
+  background-size: 100px 100px;
+  background-color: #fff;
+}
+
+.hero-img {
+  width: 500px;
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+

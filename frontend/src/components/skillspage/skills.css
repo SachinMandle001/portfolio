@@ -1,0 +1,67 @@
+.body{
+    font-family: "Poppins", sans-serif;
+    font-size: smaller;
+  
+
+}
+.bggray{
+    background-color: #3C3F3C;
+}
+.orangetext{
+    color: #FF6000;
+}
+h1{
+    font-family: "Lora", serif;
+}
+.ctitle{
+font-family: "Lora", serif;
+
+}
+
+.titlelogo{
+  color: rgba(255, 255, 255, 0.953);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.bgwhite{
+    background-color: white !important;
+    color: black;
+    
+    
+}
+
+.card{
+      transition: background-color 0.3s, transform 0.2s;
+     }
+
+
+
+.card:hover .card-img-hover {
+  transform: scale(1.01);
+}
+
+.card:hover {
+  background-color: #f97316 !important; 
+  transform: scale(1.07);
+  color: white !important;
+}
+.card:hover .ctitle {
+  color: white !important;
+}
+
+.equal-card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

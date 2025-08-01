@@ -1,0 +1,54 @@
+.body{
+    font-family: "Poppins", sans-serif;
+    font-size: smaller;
+
+}
+.bgft{
+    background-color: #3C3F3C;
+}
+.orangetext{
+    color: #FF6000;
+}
+h1,h2,h6{
+    font-family: "Lora", serif;
+}
+.bgbtn{
+    background-color: #FF6000 !important;
+}
+ul li {
+  margin-bottom: 10px; 
+}
+.social-icon {
+  background-color: #444; 
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 28px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-icon:hover {
+  background-color: #f97316; 
+  transform: scale(1.1);
+  color: white;
+}
+
+.ftlink {
+  color: white !important; /* default link color */
+  transition: color 0.3s ease;
+   font-family: "Poppins", sans-serif;
+   font-size: 14px;
+}
+.ftpop{
+  font-family: "Poppins", sans-serif;
+   font-size: 14px;
+}
+
+.ftlink:hover {
+  color: #FF6000 !important; /* hover color */
+}
+
