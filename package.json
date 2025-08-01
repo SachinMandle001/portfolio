@@ -1,5 +1,5 @@
 {
-  "name": "mern-vercel",
+  "name": "portfolio",
   "private": true,
   "scripts": {
     "build": "cd frontend && npm run build",
