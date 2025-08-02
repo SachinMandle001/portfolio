@@ -32,14 +32,14 @@ function Nvbar() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-center flex-grow-2 w-75 me-2 gap-lg-4">
+                <Nav className="justify-content-center flex-grow-1 me-5 gap-lg-4">
                   <Nav.Link as={Link} to="/">Home</Nav.Link>
                   <Nav.Link as={Link} to="/about">About</Nav.Link>
                   <Nav.Link as={Link} to="/skills">Skills</Nav.Link>
                   <Nav.Link as={Link} to="/projects">Project</Nav.Link>
                   <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
                 </Nav>
-                <Form className="d-flex mb-4 mb-md-2 mb-lg-0">
+                {/* <Form className="d-flex mb-4 mb-md-2 mb-lg-0">
                   <Form.Control
                     type="search"
                     placeholder="Search"
@@ -47,12 +47,12 @@ function Nvbar() {
                     aria-label="Search"
                   />
                   <Button variant=" btn-outline-light btn-sm " className=''>Search</Button>
-                </Form>
+                </Form> */}
                 <Link
                   to="/login"
-                  className="orngebtn text-white border-0 rounded-4 p-2 px-3 text-center btn-sm mt-5 ms-md-2 mt-lg-0 ms-lg-3 text-decoration-none"
+                  className="orngebtn text-white border-0 rounded-4 p-2 px-3 btn-sm text-decoration-none align-content-center me-lg-5"
                 >
-                  Login
+                 Login/Register
                 </Link>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

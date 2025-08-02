@@ -9,7 +9,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/user': 'http://localhost:5000',
-      '/login':'http://localhost:5000'
+      '/login':'http://localhost:5000',
+      '/send':'http://localhost:5000',
     }
   },
 })

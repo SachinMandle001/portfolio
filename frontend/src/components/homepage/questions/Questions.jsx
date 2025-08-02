@@ -13,7 +13,7 @@ const Questions = () => {
     Find answers about me and how I work.
   </p>
 
-  <div className=" p-4  mt-4">
+  <div className=" p-4  mt-4" data-aos="fade-up"data-aos-duration="1200">
     <Accordion defaultActiveKey="0" className="custom-accordion ">
       <Accordion.Item eventKey="0 ">
         <Accordion.Header>What technologies are used in your projects ?</Accordion.Header>

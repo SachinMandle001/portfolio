@@ -8,11 +8,11 @@ import {
 } from 'react-icons/fa';
 import './mycontact.css';
 import axios from 'axios';
-import Swal from 'sweetalert2'; 
+import Swal from 'sweetalert2';
 
 const Mycontact = () => {
 
- const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     subject: '',
@@ -20,35 +20,49 @@ const Mycontact = () => {
   });
 
 
- const handleChange = (e) => {
+  const handleChange = (e) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
   };
 
-   const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const { name, email, subject,message } = formData;
 
     try {
-      await axios.post('/u', formData);
+      await axios.post('/send', formData);
 
       Swal.fire({
-        title: 'Registration Successful!',
-        text: 'You have been registered successfully.',
-        icon: 'success',
-        confirmButtonText: 'OK',
-        confirmButtonColor: '#FF6000',
-        customClass: {
-          popup: 'rounded-4'
-        }
-      }).then(() => {
-        navigate('/');
+      title: 'Message Sent!',
+      text: 'Thank you for reaching out. I’ll get back to you soon.',
+      icon: 'success',
+      confirmButtonText: 'OK',
+      confirmButtonColor: '#FF6000',
+      customClass: {
+        popup: 'rounded-4'
+      }
+    }).then(() => {
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
       });
+    });
 
     } catch (error) {
       console.error(error);
+      Swal.fire({
+      title: 'Failed to Send!',
+      text: 'Something went wrong. Please try again later.',
+      icon: 'error',
+      confirmButtonText: 'Retry',
+      confirmButtonColor: '#FF6000',
+      customClass: {
+        popup: 'rounded-4'
+      }
+    });
     }
   };
 
@@ -84,32 +98,32 @@ const Mycontact = () => {
           <Col md={7} data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300"  >
             <Form onSubmit={handleSubmit} className="contact-form formbg  rounded-5 mt-4 pb-4">
               <Form.Group className="mb-3 pt-2">
-                <Form.Control type="text" placeholder="Full Name"  name="name" 
-                        value={formData.name}
-                        onChange={handleChange} className='rounded-3' required />
+                <Form.Control type="text" placeholder="Full Name" name="name"
+                  value={formData.name}
+                  onChange={handleChange} className='rounded-3' required />
               </Form.Group>
               <Form.Group className="mb-3">
-                <Form.Control 
+                <Form.Control
                   type="email"
-                        name="email"
-                        placeholder="Enter email"
-                        value={formData.email}
-                        onChange={handleChange}
-                         className='rounded-3' required />
+                  name="email"
+                  placeholder="Enter your email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className='rounded-3' required />
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Control type="text"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                         className='rounded-3' placeholder="Subject" required />
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className='rounded-3' placeholder="Subject" required />
               </Form.Group>
               <Form.Group className="mb-4">
                 <Form.Control as="textarea"
                   name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        className='rounded-3' rows={4} placeholder="Message" required />
+                  value={formData.message}
+                  onChange={handleChange}
+                  className='rounded-3' rows={4} placeholder="Message" required />
               </Form.Group>
 
               <Button type="submit" className="send-btn">

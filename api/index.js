@@ -14,6 +14,8 @@ const User=require('./models/User')
 app.get('/',(req,res)=>{
   res.sendFile(path.join(__dirname,'dist/index.html'))
 })
+const ContactRouter = require('./routes/ContactRoute')
+app.use('/send',ContactRouter)
 
 
 

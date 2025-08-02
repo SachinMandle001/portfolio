@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './hero.css';
 import { FaDownload } from "react-icons/fa";
 import { TypeAnimation } from 'react-type-animation';
+import myResume from '../../../assets/SachinResume.pdf';
 
 
 const Hero = () => {
@@ -34,11 +35,13 @@ const Hero = () => {
               <p className='text-secondary mt-4 fs-6'>
                 I'm a passionate MERN Stack Developer with strong hands-on experience building full-stack web applications using MongoDB, Express.js, React, and Node.js. As a fresher, I’m driven by curiosity, clean code, and a strong desire to solve real-world problems through technology.
               </p>
-              <div className="text-center text-md-start mt-4">
-                <button className="orngebtn text-white p-2 rounded-4 border-0 px-3">
-                  Download CV <FaDownload />
-                </button>
-              </div>
+              <a
+                href={myResume}
+                download="Sachin-Mandle-Resume.pdf"
+                className="orngebtn text-white p-2 rounded-4 border-0 px-3 text-decoration-none d-inline-block"
+              >
+                Download CV <FaDownload />
+              </a>
             </div>
 
             <div

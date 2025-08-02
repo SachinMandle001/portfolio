@@ -5,14 +5,15 @@ import Col from 'react-bootstrap/Col';
 import './topsec.css'
 import { FaDownload } from "react-icons/fa";
 import Card from 'react-bootstrap/Card';
+import myResume from '../../../assets/SachinResume.pdf';
 
 
 
 const Aboutsection = () => {
   return (
     <>
-      <div className="container bggray text-white p-5 rounded-5" style={{"margin-top": "150px"}}>
-        <h1 className='text-center mb-4  'data-aos="zoom-in">About <span className='orngetext'>Me</span></h1>
+      <div className="container bggray text-white p-5 rounded-5" style={{ "margin-top": "150px" }}>
+        <h1 className='text-center mb-4  ' data-aos="zoom-in">About <span className='orngetext'>Me</span></h1>
         <hr />
 
         <Container className='mt-5'>
@@ -20,16 +21,21 @@ const Aboutsection = () => {
             <Col md={6} className='p-4 pt-0' >
               <div className='mt-3'>
                 <h2 className='orngetext bold text-de text-center text-md-start'>Information About Me</h2>
-                <hr/>
-              <img src="./mypic.jpg" alt="Sachin" className=" hero-img rounded-5 mt-2" data-aos="fade-up" data-aos-duration="1200"  />
+                <hr />
+                <img src="./mypic.jpg" alt="Sachin" className=" hero-img rounded-5 mt-2" data-aos="fade-up" data-aos-duration="1200" />
 
                 <p className='text-white mt-4 fs-6 lh-lg' data-aos="fade-right" data-aos-duration="1200">
                   I’m Sachin Mandle, a passionate and aspiring Full Stack Developer with a strong foundation in Computer Science and Engineering, having completed both B.Tech and Diploma in CSE. As a fresher in the tech industry, I specialize in the MERN stack and have a keen interest in building responsive, user-friendly web applications that deliver seamless digital experiences.Driven by curiosity and a love for problem-solving, I’m constantly learning and evolving in the ever-changing landscape of web development. From frontend design to backend architecture, I enjoy working across the full stack to bring ideas to life. I’m excited about using technology to solve real-world problems and contribute to innovations that could positively impact the future of humanity.</p>
 
-                <div className="text-center text-md-start my-4">
-                  <button className="orngebtn text-white p-2 rounded-4 border-0 px-3" data-aos="zoom-in" data-aos-duration="1000">
+                <div className="text-center text-md-start my-4" data-aos="fade-right" data-aos-duration="1200">
+                  <a
+                    href={myResume}
+                    download="Sachin-Mandle-Resume.pdf"
+                    className="orngebtn text-white p-2 rounded-4 border-0 px-3 text-decoration-none d-inline-block"
+                    
+                  >
                     Download CV <FaDownload />
-                  </button>
+                  </a>
                 </div>
               </div>
             </Col>
@@ -62,7 +68,7 @@ const Aboutsection = () => {
                 </Col>
 
                 {/* Backend Design */}
-                <Col  data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
+                <Col data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
                   <Card className='rounded-5 bgblured h-100'>
                     <Card.Body className='text-light'>
                       <Card.Title className='ctitle'>
@@ -72,7 +78,7 @@ const Aboutsection = () => {
                       </Card.Title>
                       <hr />
                       <Card.Text>
-                         <ul className='fs-6'>
+                        <ul className='fs-6'>
                           <li className="list-group-item">Node.Js</li>
                           <li className="list-group-item">Express.Js</li>
                         </ul>
@@ -83,7 +89,7 @@ const Aboutsection = () => {
 
                 {/* DB */}
 
-                <Col  data-aos="fade-left" data-aos-duration="1200" data-aos-delay="500">
+                <Col data-aos="fade-left" data-aos-duration="1200" data-aos-delay="500">
                   <Card className='rounded-5 bgblured h-100'>
                     <Card.Body className='text-light'>
                       <Card.Title className='ctitle'>
@@ -93,7 +99,7 @@ const Aboutsection = () => {
                       </Card.Title>
                       <hr />
                       <Card.Text>
-                      <ul className='fs-6'>
+                        <ul className='fs-6'>
                           <li className="list-group-item">MongoDB</li>
                         </ul>
                       </Card.Text>
@@ -103,7 +109,7 @@ const Aboutsection = () => {
 
 
                 {/* version control */}
-                <Col  data-aos="fade-left" data-aos-duration="1200" data-aos-delay="700">
+                <Col data-aos="fade-left" data-aos-duration="1200" data-aos-delay="700">
                   <Card className='rounded-5 bgblured h-100'>
                     <Card.Body className='text-light'>
                       <Card.Title className='ctitle'>
@@ -113,7 +119,7 @@ const Aboutsection = () => {
                       </Card.Title>
                       <hr />
                       <Card.Text>
-                      <ul className='fs-6'>
+                        <ul className='fs-6'>
                           <li className="list-group-item">Git</li>
                           <li className="list-group-item">GitHub</li>
                         </ul>
