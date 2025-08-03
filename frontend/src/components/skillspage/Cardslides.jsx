@@ -47,7 +47,7 @@ function Cardslides() {
   }, []);
 
   return (
-    <div className='bggray text-center' style={{ marginTop: '70px' }}>
+    <div className='bggray text-center px-2 px-md-0' style={{ marginTop: '70px' }}>
       <h1 className='pt-5 orangetext' data-aos="zoom-in" >Technologies I Work With</h1>
       <p className='text-white fs-6' data-aos="fade-up" data-aos-duration="1500" >
         Here are some tools and technologies I regularly use to build modern, scalable web applications.

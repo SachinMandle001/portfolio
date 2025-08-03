@@ -14,7 +14,7 @@ function Nvbar() {
         <Navbar fixed='top' key={expand} expand={expand} className="bggr py-0 px-2">
           <Container fluid>
             <Navbar.Brand as={Link} to="/" className='headfnt'>
-              <img src="smlogo.png" alt="s" className=' me-1' width={'82px'} />
+              <img src="smlogo.png" as={Link} to="/" alt="s" className=' me-1' width={'82px'} />
               SACHIN
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -32,7 +32,7 @@ function Nvbar() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-center flex-grow-1 me-5 gap-lg-4">
+                <Nav className="justify-content-center flex-grow-1 me-5 gap-lg-4 mb-3 mb-lg-0">
                   <Nav.Link as={Link} to="/">Home</Nav.Link>
                   <Nav.Link as={Link} to="/about">About</Nav.Link>
                   <Nav.Link as={Link} to="/skills">Skills</Nav.Link>
@@ -50,7 +50,7 @@ function Nvbar() {
                 </Form> */}
                 <Link
                   to="/login"
-                  className="orngebtn text-white border-0 rounded-4 p-2 px-3 btn-sm text-decoration-none align-content-center me-lg-5"
+                  className="orngebtn text-white rounded-4 p-2 px-3  text-decoration-none align-content-center me-lg-5"
                 >
                  Login/Register
                 </Link>
