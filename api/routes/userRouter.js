@@ -1,7 +1,7 @@
 const express= require('express')
 const router=express.Router()
 const User=require('../models/User')
-
+const bcrypt = require('bcrypt');
 router.get('/',async(req,res)=>{
     try {
         const response= await User.find()
@@ -13,13 +13,15 @@ router.get('/',async(req,res)=>{
 })
 
 router.post('/',async(req,res)=>{
-    try {
-      const response= await User.create(req.body)
-      res.json(response)        
-    } catch (error) {
-        res.json({message:error.message})
-        console.error(error.message);       
-    }
+    const {name, email, password } = req.body;
+  const passwordHash = await bcrypt.hash(password, 10);
+  try {
+    const user = new User({name, email, passwordHash });
+    await user.save();
+    res.json({ message: 'User registered' });
+  } catch (err) {
+    res.status(400).json({ message: 'User already exists or error occurred' });
+  }
 })
 
 router.get('/:id',async(req,res)=>{

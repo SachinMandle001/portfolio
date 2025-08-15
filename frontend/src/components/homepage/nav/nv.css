@@ -7,6 +7,24 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
+.bggr .dropdown-menu {
+  background-color: #3C3F3C !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.bggr .dropdown-menu .dropdown-item,
+.bggr .dropdown-menu .dropdown-item-text {
+  color: white !important;
+}
+
+.bggr .dropdown-menu .dropdown-item:hover {
+  background-color: #555 !important; 
+}
+
+.bggr .dropdown-divider {
+  border-top: 1px solid white !important;
+  opacity: 0.5 !important; /* Ensure it's fully visible */
+}
 
 /* Make all nav links white */
 .nav-link {
@@ -29,7 +47,10 @@
   
 }
 .offcanvas-header .btn-close {
-  filter: brightness(0) invert(1) !important; /* Makes the button white */
+  filter: brightness(0) invert(1) !important;
+    position: fixed;
+    top: 6%;
+    right: 4%;
 }
 
 .navbar-toggler {
@@ -56,4 +77,33 @@
 
 .nav-link:hover {
   color: #FF6000 !important; /* hover color */
+}
+
+
+.dropdown-menu.bggr .dropdown-item:hover {
+  background-color: #FF6000 !important;
+}
+
+.bggr a.dropdown-item:hover {
+  background-color: #FF6000 !important;
+}
+
+
+html, body {
+  overflow-x: hidden !important;
+}
+
+body.offcanvas-open {
+  padding-right: 0 !important;
+}
+
+.offcanvas-header {
+  display: block !important;
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .offcanvas-header {
+    display: flex !important;
+  }
 }

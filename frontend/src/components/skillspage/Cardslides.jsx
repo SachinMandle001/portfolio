@@ -11,7 +11,8 @@ import {
 import {
   SiRedux,
   SiMongodb,
-  SiExpress,SiReactbootstrap 
+  SiExpress,
+  SiReactbootstrap,
 } from 'react-icons/si';
 
 const techStack = [
@@ -47,9 +48,11 @@ function Cardslides() {
   }, []);
 
   return (
-    <div className='bggray text-center px-2 px-md-0' style={{ marginTop: '70px' }}>
-      <h1 className='pt-5 orangetext' data-aos="zoom-in" >Technologies I Work With</h1>
-      <p className='text-white fs-6' data-aos="fade-up" data-aos-duration="1500" >
+    <div className="bggray text-center px-2 px-md-0" style={{ marginTop: '70px' }}>
+      <h1 className="pt-5 orangetext" data-aos="zoom-in">
+        Technologies I Work With
+      </h1>
+      <p className="text-white fs-6" data-aos="fade-up" data-aos-duration="1500">
         Here are some tools and technologies I regularly use to build modern, scalable web applications.
       </p>
 
@@ -60,19 +63,22 @@ function Cardslides() {
 
         <div className="slider">
           {techStack.map((tech, index) => {
-            let position = "nextSlide";
+            let position = 'nextSlide';
             if (index === current) {
-              position = "activeSlide";
+              position = 'activeSlide';
             } else if (
               index === current - 1 ||
               (current === 0 && index === techStack.length - 1)
             ) {
-              position = "prevSlide";
+              position = 'prevSlide';
             }
 
             return (
               <div className={`slide ${position}`} key={index}>
-                <div className="p-5">{tech.icon}</div>
+                <div className="d-flex flex-column align-items-center">
+                  {tech.icon}
+                  <div className="tech-name mt-3">{tech.name}</div>
+                </div>
               </div>
             );
           })}

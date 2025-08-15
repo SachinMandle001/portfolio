@@ -1,4 +1,7 @@
-
+.bgcream{
+background: url('/creambg.png') no-repeat center;
+background-size: cover;
+}
 .card:hover {
   transform: scale(1.01);
 }

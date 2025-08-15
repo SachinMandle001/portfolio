@@ -13,7 +13,7 @@ import './ft.css';
 
 const Ft = () => {
   return (
-    <footer className="bgft text-white pt-4 pb-3 rounded-top-5 mt-5">
+    <footer className="bgft text-white pt-4 pb-3 rounded-top-5">
       <div className="container">
         <h1 className="text-center text-md-start py-2" data-aos="fade-right"  data-aos-duration="1000">
           Let's <span className="orangetext">Connect</span> there
@@ -75,9 +75,8 @@ const Ft = () => {
         {/* 📄 Footer Bottom */}
         <div className="text-center mt-4">
           <small>
-            &copy; 2025 Sachin All Rights Reserved. |{' '}
-            <span className="text-decoration-none orangetext">User Terms & Conditions</span> |{' '}
-            <span className="orangetext text-decoration-none">Privacy Policy</span>
+            &copy; 2025 Sachin  <span className='orangetext ps-2'>All Rights Reserved.</span>
+            
           </small>
         </div>
       </div>

@@ -14,12 +14,20 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
+  const [loggedIn, setLoggedIn] = useState(!!localStorage.getItem('token'));
+
   const handleLogin = async (e) => {
     e.preventDefault();
+    
     try {
       const res = await axios.post('/login', { email, password });
-
+      
       if (res.data.success) {
+          localStorage.setItem('token',res.data.token);
+          localStorage.setItem('email', email);
+          setLoggedIn(true);
+          console.log(res.data.token);
+          
         // ✅ SweetAlert success
         Swal.fire({
           title: 'Login Successful!',
@@ -31,7 +39,9 @@ const Login = () => {
             popup: 'rounded-4'
           }
         }).then(() => {
-          navigate('/');
+          setEmail('');
+          setPassword('');
+          navigate('/contact');
         });
       } else {
         // Optional: SweetAlert for invalid credentials
@@ -52,6 +62,11 @@ const Login = () => {
         confirmButtonText: 'OK'
       });
     }
+  };
+
+   const handleLogout = () => {
+    localStorage.removeItem('token');
+    setLoggedIn(false);
   };
 
   return (

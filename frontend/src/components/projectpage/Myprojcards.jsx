@@ -7,7 +7,8 @@ import './project.css';
 
 const Myprojcards = () => {
   return (
-    <div style={{ marginTop: '150px' }} className="container bggray text-white p-5 rounded-5 mb-5">
+    <div className="container-fluid bgcream pb-5 pt-3">
+    <div style={{ marginTop: '150px' }} className="container bggray text-white p-5 rounded-5 ">
       <h1 className='mb-2 text-center pb-3' data-aos="zoom-in" data-aos-duration="1000" >My <span className='orangetext'>Projects</span></h1>
      <p className='text-white fs-6 text-center' data-aos="zoom-in" data-aos-duration="1200">
       Want to explore more? Just click a card to see the project code or live demo!
@@ -142,6 +143,7 @@ const Myprojcards = () => {
         </Col>
 
       </Row>
+    </div>
     </div>
   );
 };

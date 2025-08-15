@@ -12,7 +12,7 @@ import myResume from '../../../assets/SachinResume.pdf';
 const Aboutsection = () => {
   return (
     <>
-      <div className="container bggray text-white p-5 rounded-5" style={{ "margin-top": "150px" }}>
+      <div className="container bggray text-white p-5 rounded-5 mb-5" style={{ "margin-top": "150px" }}>
         <h1 className='text-center mb-4  ' data-aos="zoom-in">About <span className='orngetext'>Me</span></h1>
         <hr />
 

@@ -19,12 +19,12 @@ const skills = [
 
 const Skillbar = () => {
   return (
-    <Container className='px-3'>
+    <Container className='px-3 mb-5'>
       <h1 className='text-center orangetext mb-5' data-aos="fade-up" data-aos-duration="1000">My Skills</h1>
       <Row className='ogborder rounded-5 py-4' data-aos="zoom-in" data-aos-duration="1000">
         {skills.map((skill, index) => (
           <Col sm={12} md={6} key={index} className='my-4'>
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="1000">
               <h5>{skill.name}</h5>
               <div className='d-flex flex-wrap align-items-center gap-5'>
                 {skill.percent}%
