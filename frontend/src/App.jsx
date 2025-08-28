@@ -7,9 +7,12 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Login from './components/loginpage/Login'
 import Register from './components/loginpage/Register'
+import Edudetails from './components/edudetails/Edudetails'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import PrivateRoute from './components/PrivateRoute'; 
+
 
 
 
@@ -32,7 +35,15 @@ const App = () => {
     <Route path='/projects'element={<Projects/>}></Route>
     <Route path='/contact'element={<Contact/>}></Route>
     <Route path='/login'element={<Login/>}></Route>
-     <Route path='/register'element={<Register/>}></Route>
+    <Route path='/register'element={<Register/>}></Route>
+
+     {/* Protected Route */}
+        <Route path='/education'element={ <PrivateRoute>
+            <Edudetails />
+            </PrivateRoute>
+          } 
+        >
+        </Route>
 
     </Routes>
     </BrowserRouter>

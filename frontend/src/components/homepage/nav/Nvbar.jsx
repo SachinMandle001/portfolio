@@ -102,6 +102,7 @@ function Nvbar() {
                     <Nav.Link as={Link} to="/skills">Skills</Nav.Link>
                     <Nav.Link as={Link} to="/projects">Project</Nav.Link>
                     <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
+                    {loggedIn && <Nav.Link as={Link} to="/education">Education</Nav.Link>}
                   </Nav>
 
                   {/* Right Side Login/Register or Dropdown */}

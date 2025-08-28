@@ -1,0 +1,21 @@
+.custom-edu-table thead th {
+  background-color: #FF6000;   /* orange header */
+  color: white;
+  font-family: "Lora", serif;
+  font-size: 1.1rem;
+  padding: 12px;
+}
+
+.custom-edu-table tbody td {
+  background-color: #222121;   /* dark background for rows */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  padding: 10px;
+}
+
+
+
+.custom-edu-table tbody tr:hover td {
+  background-color: #3b3b3b; /* hover effect */
+}

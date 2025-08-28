@@ -41,7 +41,7 @@ const Login = () => {
         }).then(() => {
           setEmail('');
           setPassword('');
-          navigate('/contact');
+          navigate('/education');
         });
       } else {
         // Optional: SweetAlert for invalid credentials
@@ -64,10 +64,7 @@ const Login = () => {
     }
   };
 
-   const handleLogout = () => {
-    localStorage.removeItem('token');
-    setLoggedIn(false);
-  };
+  
 
   return (
     <>
