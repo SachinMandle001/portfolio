@@ -12,6 +12,7 @@ background-size: cover;
   border-radius: 20px;
   background-color: white;
    font-family: "Poppins", sans-serif;
+   color: black !important;
 }
 
 .login-card:hover{
@@ -34,4 +35,19 @@ background-size: cover;
   border-color: inherit !important;
   box-shadow: none !important;
   outline: none !important;
+}
+
+.scale-text {
+  display: inline-block;
+  animation: scalePulse 2s infinite ease-in-out;
+
+}
+
+@keyframes scalePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
 }

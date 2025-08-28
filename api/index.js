@@ -36,6 +36,7 @@ app.use("/send", ContactRouter);
 
 app.use("/user", router);
 
+
 app.post('/login', async (req, res) => {
   try {
      const { email, password } = req.body;
@@ -45,10 +46,13 @@ app.post('/login', async (req, res) => {
   if (!valid) return res.status(401).json({ message: 'Unauthorized' });
   const token = jwt.sign({ email: user.email }, SECRET, { expiresIn: '1h' });
   res.json({ token ,success:true });
-} catch (error) {
-    res.status(500).json({success:false, message:"Server Error", error:error.message})
+    
+  } catch (error) {
+   res.status(500).json({success:false, message:"Server Error", error:error.message})
+
   }
-})
+ 
+});
 
 app.listen(process.env.PORT, () => {
   console.log("running on port " + process.env.PORT);

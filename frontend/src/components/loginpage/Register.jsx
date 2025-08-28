@@ -50,23 +50,27 @@ const Register = () => {
 
     try {
       await axios.post('/user', formData);
-
       Swal.fire({
         title: 'Registration Successful!',
         text: 'You have been registered successfully.',
         icon: 'success',
         confirmButtonText: 'OK',
         confirmButtonColor: '#FF6000',
-        customClass: {
-          popup: 'rounded-4'
-        }
+        customClass: { popup: 'rounded-4' }
       }).then(() => {
         navigate('/login');
       });
-
     } catch (error) {
-      console.error(error);
+      Swal.fire({
+        title: 'Registration Failed!',
+        text: error.response?.data?.message || 'Something went wrong. Please try again.',
+        icon: 'error',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#FF6000',
+        customClass: { popup: 'rounded-4' }
+      });
     }
+
   };
 
   return (
@@ -75,11 +79,12 @@ const Register = () => {
       <div style={{ marginTop: '70px' }} className="login-wrapper py-5">
         <Container data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300" >
           <Row className="justify-content-center">
-            <Col xs={12} md={6} lg={4}>
+            <Col xs={12} md={6} lg={5}>
               <Card className="p-4 shadow-lg login-card rounded-4">
-                <h1 className="text-center mb-4 orangetext">Register</h1>
+                <h1 className="text-center mb-3 orangetext">Register</h1>
+                <h6 className='text-center scale-text '> 🔒 Please login or register to view my education details 🎓 </h6>
                 <hr />
-                <Form onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit} autoComplete='off'>
                   <Form.Group className="mb-3" controlId="formname">
                     <Form.Label>Full Name</Form.Label>
                     <InputGroup>

@@ -1,7 +1,6 @@
 const express = require("express");
 const ContactRouter = express.Router();
 const nodemailer = require("nodemailer");
-// const User = require('../models/User'); // Not used in this file, you can remove if not needed
 
 // ✅ Nodemailer transport config
 const transporter = nodemailer.createTransport({

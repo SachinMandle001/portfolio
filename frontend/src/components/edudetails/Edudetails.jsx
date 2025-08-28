@@ -6,6 +6,7 @@ import './edu.css'
 import Btech_Marksheet from '../../../src/assets/doc/btech.pdf';
 import Diploma_Marksheet from '../../../src/assets/doc/diploma.pdf';
 import tenth from '../../../src/assets/doc/10th.pdf';
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 
 const Edudetails = () => {
@@ -30,6 +31,15 @@ const Edudetails = () => {
       data-aos-duration="1200"
     >
       Here is a summary of my academic background.
+    </p>
+     <p
+      className="text-white fs-6 text-center d-lg-none"
+      data-aos="zoom-in"
+      data-aos-duration="1200" 
+    >
+      <FaArrowLeft className="me-2 orangetext" />
+        Swipe to see
+      <FaArrowRight className="ms-2 orangetext" />
     </p>
     <hr className="my-3" />
 

@@ -83,7 +83,7 @@ function Nvbar() {
                 ):(
                   <div className="w-100 p-3 border-bottom pb-3">
                    <Link
-                      to="/login"
+                      to="/register"
                       className="w-100 d-block text-center orngebtn text-white fs-6 text-decoration-none px-3 py-2 my-2"
                     >
                       Login/Register
@@ -109,7 +109,7 @@ function Nvbar() {
                   <div className="ms-auto">
                     {!loggedIn ? (
                       <Link
-                        to="/login"
+                        to="/register"
                         className="d-none d-lg-block orngebtn text-white rounded-4 text-decoration-none px-3 py-2 me-lg-5"
                       >
                         Login/Register

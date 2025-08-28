@@ -72,11 +72,11 @@ const Login = () => {
       <div style={{ marginTop: '60px' }} className="login-wrapper py-5">
         <Container data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
           <Row className="justify-content-center">
-            <Col xs={12} md={6} lg={4}>
+            <Col xs={12} md={6} lg={5}>
               <Card className="p-4 shadow-lg login-card rounded-4">
                 <h1 className="text-center mb-4 orangetext">Login</h1>
                 <hr />
-                <Form onSubmit={handleLogin}>
+                <Form onSubmit={handleLogin} autoComplete='off'>
                   <Form.Group className="mb-3" controlId="formEmail">
                     <Form.Label>Email</Form.Label>
                     <InputGroup>
