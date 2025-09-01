@@ -31,7 +31,7 @@ const Myprojcards = () => {
                 <Card.Text>
                   MERN stack ToDo app with Redux for state management. Create, edit, and delete tasks with a responsive interface.
                 </Card.Text>
-                <Card.Img variant="top" src="./todo.jpeg" className='service-img rounded-5' />
+                <Card.Img variant="top" src="./todo.jpg" className='service-img rounded-5' />
               </Card.Body>
             </Card>
           </a>
@@ -52,7 +52,7 @@ const Myprojcards = () => {
                 <Card.Text>
                   Responsive travel website frontend designed using HTML, CSS, and Bootstrap. Showcases destinations, packages, and a modern layout.
                 </Card.Text>
-                <Card.Img variant="top" src="./travel.jpeg" className='service-img rounded-5' />
+                <Card.Img variant="top" src="./travel.jpg" className='service-img rounded-5' />
               </Card.Body>
             </Card>
           </a>
@@ -73,7 +73,7 @@ const Myprojcards = () => {
                 <Card.Text>
                   Practo clone frontend built with React and React-Bootstrap. Features include responsive design, appointment sections, and service listings.
                 </Card.Text>
-                <Card.Img variant="top" src="./practo.jpeg" className='service-img rounded-5' />
+                <Card.Img variant="top" src="./practo.jpg" className='service-img rounded-5' />
               </Card.Body>
             </Card>
           </a>
@@ -94,7 +94,7 @@ const Myprojcards = () => {
                 <Card.Text>
                   Scope University frontend clone built with React and Bootstrap. Features responsive design, course listings, and clean navigation.
                 </Card.Text>
-                <Card.Img variant="top" src="./scope.jpeg" className='service-img rounded-5' />
+                <Card.Img variant="top" src="./scope.jpg" className='service-img rounded-5' />
               </Card.Body>
             </Card>
           </a>
@@ -115,7 +115,7 @@ const Myprojcards = () => {
                 <Card.Text>
                   Weather app built with React and React-Bootstrap. Displays real-time weather information for Bhopal, including temperature, humidity, and conditions.
                 </Card.Text>
-                <Card.Img variant="top" src="./weather.jpeg" className='service-img rounded-5' />
+                <Card.Img variant="top" src="./weather.jpg" className='service-img rounded-5' />
               </Card.Body>
             </Card>
           </a>
@@ -123,7 +123,7 @@ const Myprojcards = () => {
 
         {/* Simple Todo App */}
         <Col data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
-          <a href="https://sachin-todowebapp.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+          <a href="https://sachin-todowebapp-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
             <Card className='rounded-5 bgblured h-100'>
               <Card.Body className='text-light'>
                 <Card.Title className='ctitle'>
@@ -136,7 +136,7 @@ const Myprojcards = () => {
                 <Card.Text>
                   MERN stack ToDo app with create, edit, and delete features. Built with a responsive interface for task management.
                 </Card.Text>
-                <Card.Img variant="top" src="./simpletodo.jpeg" className='service-img rounded-5' />
+                <Card.Img variant="top" src="./simpletodo.jpg" className='service-img rounded-5' />
               </Card.Body>
             </Card>
           </a>
